@@ -1,0 +1,8 @@
+# python -m pip install -r software/requirements.txt
+# numpy and matplotlib are for software/analyze.py; trimesh and manifold3d are
+# for hardware/cad/src/build.py. Versions are floors, not pins.
+
+numpy>=1.21
+matplotlib>=3.5
+trimesh>=4.0
+manifold3d>=2.3

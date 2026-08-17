@@ -1,0 +1,36 @@
+# LC-RV reference data -- shear stress / shear rate / viscosity summary.
+# Source workbook: 'Rotational Viscometer Data.xlsx', sheet 'Miriam Stress-Strain', plus the stabilised descriptive-statistics blocks on sheet 'Miriam - load response' and the extra liquid-soap curve points on sheet 'Sasanka Gylcerol and Oil 2' (AI53:AK65).
+# Geometry stated in the workbook header: bob radius 0.0215 m, gap 0.001 m, wetted height 0.025 m. cup_id_mm 45.0 is DERIVED as 2*(R_b + G); the workbook does not state it directly.
+# record_type = 'measured' rows carry a load_cell_g. record_type = 'derived_curve_only' rows are extra liquid-soap (shear rate, viscosity) pairs published without their underlying force reading.
+# load_cell_g for the mineral-oil and 125 RPM liquid-soap rows is the MEDIAN of the corresponding stabilised sample block, not a single reading; the block statistics are given in the wb_stabilized_* columns (paper Fig. 2B).
+# Workbook model (as published): wb_shear_rate_1s = omega*R_b/G, wb_force_N = load_cell_g * 9.8 / 1000, wb_shear_stress_Pa = wb_force_N/(2*pi*R_b*h), wb_viscosity_Pas = wb_shear_stress_Pa / wb_shear_rate_1s.
+# The water rows are retained as published. Their apparent viscosity (0.0094-0.0214 Pa.s) is one to two orders of magnitude above the true viscosity of water; see data/README.md.
+# Corresponds to paper Fig. 2B, Fig. 2C.
+fluid,record_type,cup_id_mm,bob_diameter_mm,gap_mm,wetted_height_mm,rpm,wb_angular_velocity_rad_s,wb_bob_surface_velocity_m_s,wb_shear_rate_1s,load_cell_g,wb_force_N,wb_shear_stress_Pa,wb_viscosity_Pas,wb_stabilized_mean_load_cell_g,wb_stabilized_sd_load_cell_g,wb_stabilized_stderr_load_cell_g,wb_stabilized_min_load_cell_g,wb_stabilized_max_load_cell_g,wb_stabilized_n_samples,source_sheet
+water,measured,45,43,1,25,50,5.235987756,0.1125737368,112.5737368,0.83,0.008134,2.408495455,0.02139482551,,,,,,,Miriam Stress-Strain
+water,measured,45,43,1,25,75,7.853981634,0.1688606051,168.8606051,1.02,0.009996,2.959837788,0.01752829078,,,,,,,Miriam Stress-Strain
+water,measured,45,43,1,25,100,10.47197551,0.2251474735,225.1474735,1.34,0.013132,3.888414349,0.0172705218,,,,,,,Miriam Stress-Strain
+water,measured,45,43,1,25,125,13.08996939,0.2814343419,281.4343419,1.49,0.014602,4.323684612,0.01536303133,,,,,,,Miriam Stress-Strain
+water,measured,45,43,1,25,150,15.70796327,0.3377212103,337.7212103,1.42,0.013916,4.120558489,0.01220106515,,,,,,,Miriam Stress-Strain
+water,measured,45,43,1,25,175,18.32595715,0.3940080786,394.0080786,1.545,0.015141,4.483283709,0.01137865935,,,,,,,Miriam Stress-Strain
+water,measured,45,43,1,25,200,20.94395102,0.450294947,450.294947,1.46,0.014308,4.23663056,0.009408567846,,,,,,,Miriam Stress-Strain
+mineral oil,measured,45,43,1,25,25,2.617993878,0.05628686838,56.28686838,4.57,0.044786,13.26123401,0.2356008496,4.568139535,0.3912449958,0.05966430251,3.81,5.4,43,Miriam Stress-Strain
+mineral oil,measured,45,43,1,25,50,5.235987756,0.1125737368,112.5737368,5.27,0.051646,15.29249524,0.1358442536,5.391481481,1.333776603,0.1815040061,4.13,14.53,54,Miriam Stress-Strain
+mineral oil,measured,45,43,1,25,75,7.853981634,0.1688606051,168.8606051,7.6,0.07448,22.05369332,0.1306029509,7.507752809,0.6875446313,0.07287958516,6.05,8.59,89,Miriam Stress-Strain
+mineral oil,measured,45,43,1,25,100,10.47197551,0.2251474735,225.1474735,8.175,0.080115,23.72222933,0.1053630714,8.303974359,1.197183209,0.1355543053,7.51,18.36,78,Miriam Stress-Strain
+mineral oil,measured,45,43,1,25,125,13.08996939,0.2814343419,281.4343419,10.95,0.10731,31.7747292,0.1129028141,10.84260274,0.5289430643,0.04377563947,9.37,11.75,146,Miriam Stress-Strain
+mineral oil,measured,45,43,1,25,150,15.70796327,0.3377212103,337.7212103,11.88,0.116424,34.47340483,0.1020765169,11.74819277,1.001833041,0.07775732412,9.06,13.64,166,Miriam Stress-Strain
+mineral oil,measured,45,43,1,25,175,18.32595715,0.3940080786,394.0080786,14,0.1372,40.62522454,,,,,,,,Miriam Stress-Strain
+liquid soap,measured,45,43,1,25,25,2.617993878,0.05628686838,56.28686838,14.16,0.138768,41.08951282,0.7300017572,,,,,,,Miriam Stress-Strain
+liquid soap,measured,45,43,1,25,50,5.235987756,0.1125737368,112.5737368,19.91,0.195118,57.7748729,0.5132180433,,,,,,,Miriam Stress-Strain
+liquid soap,measured,45,43,1,25,75,7.853981634,0.1688606051,168.8606051,21.4,0.20972,62.09855752,0.3677504144,,,,,,,Miriam Stress-Strain
+liquid soap,measured,45,43,1,25,100,10.47197551,0.2251474735,225.1474735,22.24,0.217952,64.53607099,0.2866391081,,,,,,,Miriam Stress-Strain
+liquid soap,measured,45,43,1,25,125,13.08996939,0.2814343419,281.4343419,25.02,0.245196,72.60307986,0.2579751973,25.00159722,0.416979923,0.03474832692,23.74,25.85,144,Miriam Stress-Strain
+liquid soap,measured,45,43,1,25,150,15.70796327,0.3377212103,337.7212103,27.57,0.270186,80.00267433,0.2368896945,,,,,,,Miriam Stress-Strain
+liquid soap,derived_curve_only,45,43,1,25,,,,80.45,,,,0.642542584,,,,,,,Sasanka Gylcerol and Oil 2
+liquid soap,derived_curve_only,45,43,1,25,,,,134.142,,,,0.451274853,,,,,,,Sasanka Gylcerol and Oil 2
+liquid soap,derived_curve_only,45,43,1,25,,,,197.142,,,,0.321459648,,,,,,,Sasanka Gylcerol and Oil 2
+liquid soap,derived_curve_only,45,43,1,25,,,,251.468,,,,0.261452874,,,,,,,Sasanka Gylcerol and Oil 2
+liquid soap,derived_curve_only,45,43,1,25,,,,309.2145,,,,0.24198732,,,,,,,Sasanka Gylcerol and Oil 2
+liquid soap,derived_curve_only,45,43,1,25,,,,362.15,,,,0.24154768,,,,,,,Sasanka Gylcerol and Oil 2
+liquid soap,derived_curve_only,45,43,1,25,,,,394.0080786,,,,0.24637,,,,,,,Sasanka Gylcerol and Oil 2

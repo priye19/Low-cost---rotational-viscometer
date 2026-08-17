@@ -1,0 +1,104 @@
+# Citation File Format 1.2.0 -- https://citation-file-format.github.io/
+#
+# `preferred-citation` is what you should cite in a publication: the peer
+# reviewed article that describes the instrument.  The top-level entry
+# describes this repository, and is what a data-availability statement should
+# point at.
+cff-version: 1.2.0
+message: >-
+  If you build this instrument or use these files, please cite the article in
+  `preferred-citation`.  If you need to cite the repository itself as well,
+  cite the software entry below.
+title: Low-Cost Rotational Viscometer (LC-RV)
+abstract: >-
+  Open hardware, firmware and analysis software for a 3D-printed
+  concentric-cylinder (Couette) rotational viscometer that costs about $90 to
+  build.  A stepper-driven bob rotates inside a stationary cup that is free to
+  pivot on a bearing; a load cell holds the cup and reads the restraining
+  force F.  With the wetted cup-wall area A the shear stress is F/A, and with
+  the narrow-gap shear rate omega*R_b/G that gives viscosity over 5-400 RPM.
+type: software
+date-released: "2026-08-14"
+license: MIT
+repository-code: "https://github.com/priye19/Low-cost---rotational-viscometer"
+url: "https://doi.org/10.1021/acs.jchemed.4c01490"
+keywords:
+  - viscometer
+  - rheology
+  - Couette flow
+  - open hardware
+  - 3D printing
+  - Arduino
+  - chemical engineering education
+  - laboratory instrumentation
+authors:
+  - family-names: Knutson
+    given-names: M.
+    affiliation: >-
+      Department of Chemical and Environmental Engineering, University of
+      Cincinnati, Cincinnati, OH 45221, USA
+  - family-names: Weerakoon
+    given-names: Sasanka P.
+    affiliation: >-
+      Department of Chemical and Environmental Engineering, University of
+      Cincinnati, Cincinnati, OH 45221, USA
+  - family-names: Ticknor
+    given-names: C. J.
+    affiliation: >-
+      Department of Chemical and Environmental Engineering, University of
+      Cincinnati, Cincinnati, OH 45221, USA
+  - family-names: Yavitt
+    given-names: B. M.
+    affiliation: >-
+      Department of Chemical and Environmental Engineering, University of
+      Cincinnati, Cincinnati, OH 45221, USA
+  - family-names: Priye
+    given-names: Aashish
+    email: priyeah@uc.edu
+    affiliation: >-
+      Department of Chemical and Environmental Engineering, and Digital
+      Futures, University of Cincinnati, Cincinnati, OH 45221, USA
+preferred-citation:
+  type: article
+  title: >-
+    Development and Implementation of a Low-Cost 3D-Printed Rotational
+    Viscometer for Rheology and Fluid Mechanics Education
+  journal: Journal of Chemical Education
+  publisher:
+    name: American Chemical Society
+  year: 2025
+  month: 3
+  volume: 102
+  issue: 3
+  start: 1138
+  end: 1145
+  doi: 10.1021/acs.jchemed.4c01490
+  url: "https://doi.org/10.1021/acs.jchemed.4c01490"
+  issn: 0021-9584
+  authors:
+    - family-names: Knutson
+      given-names: M.
+      affiliation: >-
+        Department of Chemical and Environmental Engineering, University of
+        Cincinnati, Cincinnati, OH 45221, USA
+    - family-names: Weerakoon
+      given-names: Sasanka P.
+      affiliation: >-
+        Department of Chemical and Environmental Engineering, University of
+        Cincinnati, Cincinnati, OH 45221, USA
+    - family-names: Ticknor
+      given-names: C. J.
+      affiliation: >-
+        Department of Chemical and Environmental Engineering, University of
+        Cincinnati, Cincinnati, OH 45221, USA
+    - family-names: Yavitt
+      given-names: B. M.
+      affiliation: >-
+        Department of Chemical and Environmental Engineering, University of
+        Cincinnati, Cincinnati, OH 45221, USA
+    - family-names: Priye
+      given-names: Aashish
+      email: priyeah@uc.edu
+      affiliation: >-
+        Department of Chemical and Environmental Engineering, and Digital
+        Futures, University of Cincinnati, Cincinnati, OH 45221, USA

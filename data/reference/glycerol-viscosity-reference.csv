@@ -1,0 +1,30 @@
+# Literature reference viscosities for aqueous glycerol solutions.
+# PRIMARY SOURCE: Sheely, M. L. 'Glycerol Viscosity Tables.' Industrial & Engineering Chemistry 1932, 24 (9), 1060-1064. doi:10.1021/ie50273a022  -- reference (10) of the LC-RV paper.
+# The 10 %-step values below are the Sheely tabulation as it is conventionally reproduced (Segur, J. B.; Oberstar, H. E. Ind. Eng. Chem. 1951, 43 (9), 2117-2120; and the Glycerine Producers' Association 'Physical Properties of Glycerine and its Solutions'). The 0 % row is pure water and is taken from the standard IAPWS/CRC value rather than from Sheely.
+# concentration_pct is glycerol mass fraction in water, in per cent.
+# viscosity_Pas is dynamic viscosity in pascal-seconds (1 Pa.s = 1000 cP = 1000 mPa.s).
+# temp_sensitivity_pct_per_degC is the approximate fractional change of viscosity with temperature near room temperature, computed as 100 * ln(mu_25C / mu_20C) / 5. It is NEGATIVE because viscosity falls as temperature rises, and it is the same for both rows of a given concentration because it characterises the 20-25 C interval.
+# Rounding note: 80 % at 20 C is quoted here as 0.0602 Pa.s; some reproductions of the same table list 0.0601 Pa.s.
+concentration_pct,temperature_C,viscosity_Pas,temp_sensitivity_pct_per_degC,source
+0,20,0.001002,-2.37,IAPWS/CRC pure-water viscosity (0 % glycerol end point)
+0,25,0.00089,-2.37,IAPWS/CRC pure-water viscosity (0 % glycerol end point)
+10,20,0.00131,-2.55,"Sheely 1932 (Ind. Eng. Chem. 24(9), 1060-1064) as tabulated by Segur & Oberstar 1951"
+10,25,0.001153,-2.55,"Sheely 1932 (Ind. Eng. Chem. 24(9), 1060-1064) as tabulated by Segur & Oberstar 1951"
+20,20,0.00176,-2.64,"Sheely 1932 (Ind. Eng. Chem. 24(9), 1060-1064) as tabulated by Segur & Oberstar 1951"
+20,25,0.001542,-2.64,"Sheely 1932 (Ind. Eng. Chem. 24(9), 1060-1064) as tabulated by Segur & Oberstar 1951"
+30,20,0.0025,-2.95,"Sheely 1932 (Ind. Eng. Chem. 24(9), 1060-1064) as tabulated by Segur & Oberstar 1951"
+30,25,0.002157,-2.95,"Sheely 1932 (Ind. Eng. Chem. 24(9), 1060-1064) as tabulated by Segur & Oberstar 1951"
+40,20,0.00372,-3.13,"Sheely 1932 (Ind. Eng. Chem. 24(9), 1060-1064) as tabulated by Segur & Oberstar 1951"
+40,25,0.003181,-3.13,"Sheely 1932 (Ind. Eng. Chem. 24(9), 1060-1064) as tabulated by Segur & Oberstar 1951"
+50,20,0.006,-3.48,"Sheely 1932 (Ind. Eng. Chem. 24(9), 1060-1064) as tabulated by Segur & Oberstar 1951"
+50,25,0.005041,-3.48,"Sheely 1932 (Ind. Eng. Chem. 24(9), 1060-1064) as tabulated by Segur & Oberstar 1951"
+60,20,0.0108,-4.04,"Sheely 1932 (Ind. Eng. Chem. 24(9), 1060-1064) as tabulated by Segur & Oberstar 1951"
+60,25,0.008823,-4.04,"Sheely 1932 (Ind. Eng. Chem. 24(9), 1060-1064) as tabulated by Segur & Oberstar 1951"
+70,20,0.0225,-4.79,"Sheely 1932 (Ind. Eng. Chem. 24(9), 1060-1064) as tabulated by Segur & Oberstar 1951"
+70,25,0.01771,-4.79,"Sheely 1932 (Ind. Eng. Chem. 24(9), 1060-1064) as tabulated by Segur & Oberstar 1951"
+80,20,0.0602,-5.44,"Sheely 1932 (Ind. Eng. Chem. 24(9), 1060-1064) as tabulated by Segur & Oberstar 1951"
+80,25,0.04586,-5.44,"Sheely 1932 (Ind. Eng. Chem. 24(9), 1060-1064) as tabulated by Segur & Oberstar 1951"
+90,20,0.219,-6.78,"Sheely 1932 (Ind. Eng. Chem. 24(9), 1060-1064) as tabulated by Segur & Oberstar 1951"
+90,25,0.156,-6.78,"Sheely 1932 (Ind. Eng. Chem. 24(9), 1060-1064) as tabulated by Segur & Oberstar 1951"
+100,20,1.412,-8.27,"Sheely 1932 (Ind. Eng. Chem. 24(9), 1060-1064) as tabulated by Segur & Oberstar 1951"
+100,25,0.934,-8.27,"Sheely 1932 (Ind. Eng. Chem. 24(9), 1060-1064) as tabulated by Segur & Oberstar 1951"
